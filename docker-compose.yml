@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  php:
+    build: ./php
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8000:80"
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:11
+    restart: always
+    security_opt:
+      - apparmor=unconfined
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: liceu
+      MYSQL_PASSWORD: liceu
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: liceu
+      UPLOAD_LIMIT: 40M
+    depends_on:
+      - mariadb
+
+volumes:
+  db_data:
