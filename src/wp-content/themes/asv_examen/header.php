@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEX</title>
-    <link rel="stylesheet" href="assets/css/style.css"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <title><?php wp_title(); ?></title>
+
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">  
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <?php wp_head(); ?>
+
 </head>
 
 <body class="bg-dark text-white"> 
