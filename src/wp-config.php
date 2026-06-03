@@ -89,7 +89,9 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+// TRUCS PERQUÈ VAGI ALTA VELOCITAT A L'INSTITUT:
+define( 'WP_HTTP_BLOCK_EXTERNAL', true );
+define( 'DISABLE_WP_CRON', true );
 
 /* That's all, stop editing! Happy publishing. */
 
