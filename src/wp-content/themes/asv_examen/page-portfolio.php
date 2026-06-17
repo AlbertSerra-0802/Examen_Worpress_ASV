@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Portfolio
+*/
+?>
 
 <main class="container my-5 text-center text-white">
     <h1 class="display-4 fw-bold">Portafolio</h1>
@@ -52,5 +56,3 @@
         </a>
     </div>
 </main>
-
-<?php get_footer(); ?>

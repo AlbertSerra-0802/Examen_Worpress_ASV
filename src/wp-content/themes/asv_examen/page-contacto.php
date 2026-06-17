@@ -1,10 +1,14 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Contacto
+*/
+?>
 
 <main class="container my-5 text-white">
     <div class="row justify-content-center">
         <div class="col-md-6 text-center mb-4">
             <h1 class="display-4 fw-bold text-info">Contacto</h1>
-            <p class="lead text-secondary">¿Tienes alguna pregunta sobre la misión? Déjanos un mensaje.</p>
+            <p class="lead text-light">¿Tienes alguna pregunta sobre la misión? Déjanos un mensaje.</p>
         </div>
     </div>
 
@@ -24,11 +28,9 @@
                         <label class="form-label fw-bold">Mensaje</label>
                         <textarea class="form-control bg-secondary text-white border-0" rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-info w-100 fw-bold text-dark rounded-pill">Enviar Mensaje 🚀</button>
+                    <button type="submit" class="btn btn-info w-100 fw-bold text-light rounded-pill">Enviar Mensaje 🚀</button>
                 </form>
             </div>
         </div>
     </div>
 </main>
-
-<?php get_footer(); ?>

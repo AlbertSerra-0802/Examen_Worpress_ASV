@@ -21,22 +21,25 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Apollo Mission</a>
+                <!-- Hem arreglat l'enllaç del logo perquè torni a l'inici del WordPress -->
+                <a class="navbar-brand" href="<?php echo home_url(); ?>">Apollo Mission</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-               <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto d-flex flex-row gap-4 list-unstyled mb-0">
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bold px-2" href="<?php echo home_url(); ?>">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold px-2" href="<?php echo get_permalink(15); ?>">Portfolio</a>
+                            <!-- MODIFICAT: Ara apunta directament al teu codi de Portfolio -->
+                            <a class="nav-link text-white fw-bold px-2" href="<?php echo home_url('/?seccio=portfolio'); ?>">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold px-2" href="<?php echo get_permalink(17); ?>">Contacto</a>
+                            <!-- MODIFICAT: Ara apunta directament al teu codi de Contacto -->
+                            <a class="nav-link text-white fw-bold px-2" href="<?php echo home_url('/?seccio=contacto'); ?>">Contacto</a>
                         </li>
                     </ul>
                 </div>
