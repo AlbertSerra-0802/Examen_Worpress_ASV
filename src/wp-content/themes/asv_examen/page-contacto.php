@@ -1,8 +1,8 @@
 <?php
 /*
-Template Name: Contacto
+Template Name: Contacto Mision
 */
-?>
+get_header(); ?>
 
 <main class="container my-5 text-white">
     <div class="row justify-content-center">
@@ -34,3 +34,5 @@ Template Name: Contacto
         </div>
     </div>
 </main>
+
+<?php get_footer(); ?>
