@@ -10,7 +10,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
         <div class="container">
-            <a class="navbar-brand fw-bold text-info" href="<?php echo home_url(); ?>">To the Moon</a>
+            <a class="navbar-brand fw-bold text-light" href="<?php echo home_url(); ?>">To the Moon</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
